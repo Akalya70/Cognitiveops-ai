@@ -1,0 +1,37 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: cognitiveops-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_NAME=CognitiveOps AI
+      - DATABASE_URL=sqlite:///./cognitiveops.db
+      - SECRET_KEY=${SECRET_KEY:-change-this-secret-in-prod}
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:5173}
+    volumes:
+      - backend-data:/app
+    restart: always
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: cognitiveops-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE_URL=${VITE_API_BASE_URL:-http://localhost:8000/api}
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  backend-data:
