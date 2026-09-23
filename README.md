@@ -23,6 +23,7 @@
 
 ---
 
+
 ## 📌 About The Project
 
 **CognitiveOps-AI** is an AI-powered intelligent decision-support platform that combines **Artificial Intelligence, intelligent agents, backend services, databases, and domain-specific applications** into a unified system.
