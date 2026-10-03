@@ -4,6 +4,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4facfe,100:00f2fe&height=220&section=header&text=CognitiveOps-AI&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%"/>
 </p>
 
+
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00C6FF&center=true&vCenter=true&width=750&lines=AI-Powered+Decision+Support+Platform;Intelligent+Multi-Agent+System;AI+SQL+Query+Agent;Crop+Recommendation+Agent;Unified+Education+System;Turning+Data+Into+Intelligent+Decisions" alt="Typing SVG"/>
 </p>
