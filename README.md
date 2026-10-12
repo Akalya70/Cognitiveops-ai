@@ -44,7 +44,6 @@ The overall goal is to demonstrate how AI can be integrated with conventional so
 Modern applications generate huge amounts of information, but users often need technical knowledge to convert that information into meaningful decisions.
 
 For example:
-
 - A database user may know what information they need but may not know SQL.
 - A farmer may have agricultural parameters but may not know which crop is suitable.
 - Educational institutions may have student and academic information spread across different systems.
